@@ -49,26 +49,26 @@
 			<div class="row">
 
 
-				<div class="col-md-6">
+				<div class="col-md-6" v-for="(movie, index) in movies" :key="movie.title">
 					<div class="thumbnail">
 
 
-						<img class="poster img-fluid" :src="movies[0].posters[0]" />
-						<div class="imageInfo">{{movies[0].posterIndex}}</div>
+						<img class="poster img-fluid" :src="movies[index].posters[0]" />
+						<div class="imageInfo">{{movies[index].posterIndex}}</div>
 
 
-						<p class="title">{{movies[0].title}} ({{movies[0].country}})</p>
-						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movies[0].iscore}} </p>
-						<p class="runtime">Runtime: {{movies[0].runtime}}</p>
-						<p class="released">Released: {{movies[0].released}} | Rated: {{movies[0].rating}}</p>
-						<p class="websites">Websites: <a :href="movies[0].imdb"> IMDB</a> | <a
-								:href="movies[0].website">Official</a></p>
+						<p class="title">{{movies[index].title}} ({{movies[index].country}})</p>
+						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movies[index].iscore}} </p>
+						<p class="runtime">Runtime: {{movies[index].runtime}}</p>
+						<p class="released">Released: {{movies[index].released}} | Rated: {{movies[index].rating}}</p>
+						<p class="websites">Websites: <a :href="movies[index].imdb"> IMDB</a> | <a
+								:href="movies[index].website">Official</a></p>
 
 
 						<div class="social">
-							<p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movies[0].likes}}
+							<p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movies[index].likes}}
 							</p>
-							<p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{movies[0].dislikes}}</p>
+							<p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{movies[index].dislikes}}</p>
 						</div>
 					</div>
 				</div>
