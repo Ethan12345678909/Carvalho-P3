@@ -21,7 +21,6 @@
 */
 
 
-
 const vue_app = Vue.createApp({
       // This automatically imports your movies.json file and puts it into
       //   the variable: movies
@@ -35,18 +34,23 @@ const vue_app = Vue.createApp({
             // This holds your movies.json data.
             movies: [],
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-              title: 'IMDB ' + 'Ethan’s Top 8 Movies',
-              owner: 'Ethan',
-              github: 'https://github.com/Ethan12345678909/Carvalho-P3'
+              title: 'IMDB ' + 'Adil’s Top 8 Movies',
+              owner: 'Adil',
+              github: 'https://github.com/adilsoomro15/Soomro-P3'
       }
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            getMonthText(dateArray) {
+                  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October','November', 'December'];
+                  year = dateArray[0];
+                  monthIndex = dateArray[1] - 1;
+                  day = dateArray[2];
+                  month = months[monthIndex];
+                  return `${month} ${day}, ${year}`;
+            }
       }
 })
 
-
 vue_app.mount("#vue_app")
-
-
 
