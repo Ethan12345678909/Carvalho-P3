@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+            {
+            "title": "Titanic",
+            "iscore": 7.3,
+            "rating": "PG-13",
+            "runtime": 194,
+            "released": [1997, 12, 17],
+            "country": "USA",
+            "posters": ["img/titanic1.webp", "img/titanic2.webp"],
+            "imdb": "https://www.imdb.com/title/tt0120338/?ref_=fn_al_tt_1",
+            "website": "https://www.facebook.com/TitanicMovie/",
+            "likes": 963,
+            "dislikes": 29,
+            "posterindex": 0
+      },
+      {
+            "title": "Transformers",
+            "iscore": 7.0,
+            "rating": "PG-13",
+            "runtime": 144,
+            "released": [2007, 8, 3],
+            "country": "USA",
+            "posters": ["img/transformers1.jpg", "img/Transformers2.webp"],
+            "imdb": "https://www.imdb.com/title/tt0418279/?ref_=fn_al_tt_1",
+            "website": "https://www.transformersmovie.com/",
+            "likes": 628,
+            "dislikes": 177,
+            "posterindex": 0
+      },
+      {
+            "title": "Big",
+            "iscore": 7.3,
+            "rating": "PG",
+            "runtime": 104,
+            "released": [1988, 8, 3],
+            "country": "USA",
+            "posters": ["img/big1.jpg", "img/big2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0094737/?ref_=nv_sr_srsg_3_tt_8_nm_0_q_big",
+            "website": "https://en.wikipedia.org/wiki/Big_(film)#:~:text=At%20the%20time%20of%20the,(1987)%2C%2018%20Again!",
+            "likes": 761,
+            "dislikes": 137,
+            "posterindex": 0
       }
 ]
