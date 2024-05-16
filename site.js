@@ -48,7 +48,7 @@ const vue_app = Vue.createApp({
                   day = dateArray[2];
                   month = months[monthIndex];
                   return `${month} ${day}, ${year}`;
-            }
+            },
                posterClick(index) {
                   if (this.movies[index].posterindex > this.movies[index].posters.length - 2) {
                         this.movies[index].posterindex = 0
